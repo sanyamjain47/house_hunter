@@ -78,7 +78,8 @@ for suburb in suburbs:
                 'baths':bathrooms,
                 'parking':parking,
                 'suburb':suburb,
-                'postcode':suburb[1]
+                'postcode':suburb[1],
+                'url':i
             })
             
         except:
