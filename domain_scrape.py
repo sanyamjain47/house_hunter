@@ -7,19 +7,13 @@ import json
 import time
 import numpy as np
 from helper_functions import *
+import parameters
 
-suburbs = [
-    ("mascot", "2020"),
-    ("rosebery", "2018"),
-    ("alexandria", "2015"),
-    ("botany", "2019"),
-    ("randwick", "2031"),
-    ("waterloo", "2017")
-]
+suburbs = parameters.suburbs
 
-bedrooms = 2
-price_range = (0, 800)
-keywords = ["air condition", "study"]
+bedrooms = parameters.bedrooms
+price_range = parameters.price_range
+keywords = parameters.keywords
 
 URL = generate_url("www.domain.com.au", suburbs, bedrooms, price_range, keywords=keywords)
 
