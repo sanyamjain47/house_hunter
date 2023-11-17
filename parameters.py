@@ -20,7 +20,14 @@ suburbs = [
     ("st peters", "2044"),
     ("tempe", "2044"),
     ("daceyville", "2032"),
-    ("matraville", "2036")
+    ("matraville", "2036"),
+    ("wolli creek", "2205"),
+    ("arncliffe", "2205"),
+    ("turrella", "2205"),
+    ("bardwell park", "2207"),
+    ("bardwell valley", "2207"),
+    ("banksia", "2216"),
+    ("kyeemagh", "2216"),
 ]
 
 bedrooms = 2
