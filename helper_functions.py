@@ -10,8 +10,14 @@ from bs4 import BeautifulSoup
 import json
 import base64
 from urllib.parse import urlparse, parse_qs, urlunparse, urlencode
+import re
 
 SCROLL_PAUSE_TIME = 5
+
+def extract_number(text):
+    match = re.search(r'\d+', text)
+    return match.group() if match else None
+
 
 def append_page_to_url(url, page_number):
     # Parse the URL

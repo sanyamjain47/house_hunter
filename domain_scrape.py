@@ -72,9 +72,9 @@ for suburb in suburbs:
                     parking = text.split(' ')[0]
 
             all_houses.append({
-                'price':price,
+                'price':extract_number(price),
                 'address':address,
-                'beds':beds,
+                'beds':extract_number(beds),
                 'baths':bathrooms,
                 'parking':parking,
                 'suburb':suburb,
@@ -86,8 +86,7 @@ for suburb in suburbs:
             print(i)
 
 df = pd.DataFrame(all_houses)
-df = df.drop_duplicates()
-# Save the DataFrame to a CSV file
+result_df = df.drop_duplicates(subset=['url'])
 filename = 'houses.csv'
 df.to_csv(filename, index=False)
 print(f'Data saved to {filename}')

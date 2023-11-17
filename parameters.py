@@ -24,5 +24,5 @@ suburbs = [
 ]
 
 bedrooms = 2
-price_range = (0, 800)
+price_range = (600, 800)
 keywords = []
