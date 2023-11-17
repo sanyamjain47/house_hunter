@@ -46,7 +46,7 @@ def generate_url(
     exclude_deposit_str = "excludedeposittaken=1" if exclude_deposit_taken else ""
 
     # Keywords
-    if keywords:
+    if keywords and len(keywords) != 0:
         # Encoding the keywords for URL
         encoded_keywords = ",".join(keywords).replace(" ", "%20").replace(",", "%2C")
         keyword_str = f"keywords={encoded_keywords}"
@@ -66,7 +66,7 @@ def generate_url(
         if param
     ]
     final_url = base_url + "&".join(parameters)
-
+    print(final_url)
     return final_url
 
 

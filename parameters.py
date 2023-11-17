@@ -25,4 +25,4 @@ suburbs = [
 
 bedrooms = 2
 price_range = (0, 800)
-keywords = ["air condition", "study"]
+keywords = []
